@@ -1,0 +1,20 @@
+.Create,.Choose, input[type=submit],.Back{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: aqua;
+    border-radius: 10px;
+    padding: 10px;
+}
+.title, input[type=text]{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#CreateProfile > input[type=submit]{
+    margin-top: 10px;
+}
+.Create,.title{
+    margin-top: 45vh;
+}
