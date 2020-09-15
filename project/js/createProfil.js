@@ -1,3 +1,4 @@
+import Profil from "./Profil.js"
 
 export let createLink = () => {
     let bouton = document.querySelector(".Create")
@@ -9,19 +10,13 @@ export let createLink = () => {
     })
 }
 
-export let createProfil = () => {
+export let createProfil = (profil) => {
     let name = document.querySelector("#CreateProfile > input[type=text]")
     let submit = document.querySelector("#CreateProfile > input[type=submit]")
     submit.addEventListener("click",()=>{
         let textname = name.value
         console.log(localStorage.getItem("max"))
-        if (localStorage.getItem("max") == null){
-            localStorage.setItem("max",0)
-            localStorage.setItem(0,textname)
-        }else{
-            localStorage.setItem("max",parseInt(localStorage.getItem("max"))+1)
-            localStorage.setItem(localStorage.getItem("max"),textname)
-        }
+        profil.ajouterUnProfil(textname)
     })
 }
 

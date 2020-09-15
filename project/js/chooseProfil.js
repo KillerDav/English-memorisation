@@ -1,4 +1,6 @@
-export let chooseLink = () => {
+import Profil from "./Profil.js"
+
+export let chooseLink = (profil) => {
     let bouton = document.querySelector(".Choose")
     bouton.addEventListener("click",()=>{
         let boutons = document.querySelector("div#buttonCreateChoose")
@@ -7,17 +9,20 @@ export let chooseLink = () => {
         choose.style.display = ""
 
         let profils = document.querySelector("#ChooseProfile > #profil")
-        let max = parseInt(localStorage.getItem("max"))
-        for (let i = 0; i < max + 1; i++){
-            let name = localStorage.getItem(i+"")
-            profils.innerHTML+="<button class='prof' value='"+i+"'>"+name
-                +"</button>"
-        }
+        profil.profils.forEach((element)=>{profils.innerHTML+="<button class='prof' value='"+element+"'>"+element
+                +"</button>"})
+
+        let innerprofils = profils.querySelectorAll(".prof")
+        innerprofils.forEach((element)=>{
+            element.addEventListener("click",()=>{
+                let name = element.value
+                profil.choisirUnProfil(name)
+                console.log(profil)
+            })
+        })
     })
 }
 
-export let chooseProfil = () => {
-}
 
 export let backChoose = ()=> {
     document.querySelector("#ChooseProfile > button.Back").addEventListener(
