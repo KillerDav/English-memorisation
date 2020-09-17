@@ -1,0 +1,19 @@
+RewriteEngine On
+#
+# RewriteBase indispensable sur webetu :
+
+#RewriteBase /www/chruscie1u/s3d_s09_bigeon_chrusciel_cuenot_viola/temp/
+
+
+#
+# Pour interdire l'accès aux répertoires contenant du code
+RewriteRule ^sql(/.*|)$ - [NC,F]
+RewriteRule ^src(/.*|)$ - [NC,F]
+RewriteRule ^vendor(/.*|)$ - [NC,F]
+
+#
+# réécriture pour slim
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
