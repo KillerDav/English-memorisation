@@ -37,16 +37,43 @@ END;
     public function render(){
         $lienAjoutProfil = $this->app->router->pathFor('route_ajoutprofil');
         $lienDecoProfil = $this->app->router->pathFor('route_decoprofil');
+        $lienAjoutQuestion = $this->app->router->pathFor('route_addquestion');
         $listeprofil = $this->listeProfil();
         $bienvenue = "";
         $deco = "";
+        $boutonAjouterQuestion = "";
+
+        $cacheChoixBoutonAccueil = "";
+
         if (isset($_SESSION["id"])){
+            $cacheChoixBoutonAccueil = 'display:none';
             $bienvenue = "<div class='welcome'>Bienvenue ".$_SESSION["name"]."</div>";
             $deco = <<<END
 <form action=$lienDecoProfil method="post">
 <input type="submit" value="Log out">
 </form>
 END;
+            if (isset($_SESSION["name"])){
+                if ($_SESSION["name"] == "Admin"){
+                    $boutonAjouterQuestion = <<<END
+<div class="BoutonAjouterQuestion">
+    <button class="addQuestion">Add a question</button>
+</div>
+<div class="FormulaireAddQuestion" style="display: none">
+    <button class="Back">Return</button>
+    <form action=$lienAjoutQuestion method="post">
+        <p>Question: <input type="text" name="question" required>
+        <p>True answer: <input type="text" name="trueanswer" required>
+        <p>False answer 1: <input type="text" name="falseanswer1"></p>
+        <p>False answer 2: <input type="text" name="falseanswer2"></p>
+        <p>False answer 3: <input type="text" name="falseanswer3"></p>
+        <input type="submit" value="Submit" required>
+</form>
+</div>
+END;
+
+                }
+            }
         }
 
 
@@ -62,7 +89,7 @@ END;
 <body>
 $bienvenue
 $deco
-<div id="buttonCreateChoose">
+<div id="buttonCreateChoose" style=$cacheChoixBoutonAccueil>
     <button class="Create"
             type="button">Create profil</button>
     <button class="Choose"
@@ -86,6 +113,8 @@ $deco
     <button class="Back"
             type="button">Back to the menu</button>
 </div>
+$boutonAjouterQuestion
+
 
 <script src="js/index.js" type="module">
 </script>
@@ -94,4 +123,14 @@ $deco
 END;
         return $html;
     }
+
+
+    public function vueboite(){
+        $html = <<<END
+
+END;
+
+    }
+
 }
+

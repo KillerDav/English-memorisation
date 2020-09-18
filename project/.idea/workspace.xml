@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9fc53863-37ec-4e67-8f58-d6511481ed3d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vues/VueAide.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/vues/VueAide.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/src/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/src/vendor/pimple/pimple" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/src/vendor/slim/slim" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/src/vendor/composer" />
+      <path value="$PROJECT_DIR$/src/vendor/illuminate/container" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/src/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/src/vendor/illuminate/database" />
+      <path value="$PROJECT_DIR$/src/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/src/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/src/vendor/kylekatarnls/update-helper" />
+      <path value="$PROJECT_DIR$/src/vendor/nikic/fast-route" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1ZfPgwtlv6mGJ1bqyjogYze6arn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../OnsenUI-Todo-App-master" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9fc53863-37ec-4e67-8f58-d6511481ed3d" name="Default Changelist" comment="" />
+      <created>1585227289539</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585227289539</updated>
+      <workItem from="1585227291889" duration="142000" />
+      <workItem from="1585307341126" duration="6418000" />
+      <workItem from="1585409884772" duration="16560000" />
+      <workItem from="1585472934279" duration="13148000" />
+      <workItem from="1585559783668" duration="14325000" />
+      <workItem from="1585740222534" duration="30568000" />
+      <workItem from="1585819200006" duration="23300000" />
+      <workItem from="1585902000372" duration="1892000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1230" y="-164" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1585433662791">
+      <screen x="-1920" y="-440" width="1920" height="1040" />
+    </state>
+    <state x="-1230" y="-164" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/-1920.-440.1920.1040@-1920.-440.1920.1040" timestamp="1585433662791" />
+    <state x="493" y="180" key="FileChooserDialogImpl" timestamp="1585478892571">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="-1180" y="-164" key="FileChooserDialogImpl/0.0.1280.680/-1920.-440.1920.1040@-1920.-440.1920.1040" timestamp="1585419656471" />
+    <state x="493" y="180" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585478892571" />
+    <state x="-1414" y="-98" key="com.intellij.ide.util.TipDialog" timestamp="1585902113931">
+      <screen x="-1920" y="-352" width="1920" height="1040" />
+    </state>
+    <state x="-1414" y="-98" key="com.intellij.ide.util.TipDialog/0.0.1280.680/-1920.-352.1920.1040@-1920.-352.1920.1040" timestamp="1585902113931" />
+    <state x="-1414" y="-186" key="com.intellij.ide.util.TipDialog/0.0.1280.680/-1920.-440.1920.1040@-1920.-440.1920.1040" timestamp="1585819248875" />
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1585472934739" />
+  </component>
+</project>

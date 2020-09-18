@@ -19,27 +19,20 @@ $app = new \Slim\App($conf);
 //Simplification des appels de classe
 use memo\controleurs\ControleurAccueil as ControleurAccueil;
 use memo\controleurs\ControleurProfil;
+use memo\modeles\Profil;
 
-/**
-use cetofacile\controleurs\ControleurAccueil as ControleurAccueil;
-use cetofacile\controleurs\ControleurParametre as ControleurParametre;
-use cetofacile\controleurs\ControleurConnexion as ControleurConnexion;
-use cetofacile\controleurs\ControleurInscription as ControleurInscription;
-use cetofacile\controleurs\ControleurListeAliment as ControleurListeAliment;
-use cetofacile\controleurs\ControleurPatient as ControleurPatient;
-use cetofacile\controleurs\ControleurRepas as ControleurRepas;
-use cetofacile\controleurs\ControleurCompte as ControleurCompte;
-use cetofacile\controleurs\ControleurHistorique as ControleurHistorique;
-use cetofacile\controleurs\ControleurRecette as ControleurRecette;
-use cetofacile\controleurs\ControleurRecetteDetail as ControleurRecetteDetail;
-use cetofacile\controleurs\ControleurListeRecette as ControleurListeRecette;
-use cetofacile\controleurs\ControleurCreationRecette as ControleurCreationRecette;
-use cetofacile\controleurs\ControleurSuivi;
-use cetofacile\controleurs\ControleurAide;
-use cetofacile\controleurs\ControleurContact;
-//-
-*/
 // GET/POST
+
+function verifierCompteAdmin(){
+    $v = Profil::where("pseudo","=","Admin")->count();
+    if($v <= 0){
+        $p = new Profil();
+        $p->pseudo = "Admin";
+        $p->save();
+    }
+}
+
+verifierCompteAdmin();
 
 $app->get('/',function($rq,$rs){
     $c = new ControleurAccueil();
@@ -61,6 +54,11 @@ $app->post('/Deconnexion',function ($rq,$rs,$args) {
     $c = new ControleurProfil();
     return $c->deconnexion($rq,$rs,$this);
 })->setName("route_decoprofil");
+
+$app->post('/AjouterQuestion',function ($rq,$rs,$args) {
+    $c = new ControleurProfil();
+    return $c->deconnexion($rq,$rs,$this);
+})->setName("route_addquestion");
 session_start();
 
 $app->run();

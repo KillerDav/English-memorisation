@@ -1,4 +1,4 @@
-.Create,.Choose, input[type=submit],.Back{
+.Create,.Choose,.addQuestion, input[type=submit],.Back{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -15,6 +15,6 @@
 #CreateProfile > input[type=submit]{
     margin-top: 10px;
 }
-.Create,.title{
+.Create,.addQuestion,.title{
     margin-top: 45vh;
 }
